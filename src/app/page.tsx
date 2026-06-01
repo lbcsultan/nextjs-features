@@ -32,6 +32,12 @@ export default function Home() {
             >
               가이드 시작하기
             </Link>
+            <Link
+              href="/playground"
+              className="inline-flex h-11 items-center rounded-full border border-zinc-900 px-6 text-sm font-medium text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-white dark:text-white dark:hover:bg-zinc-900"
+            >
+              백엔드 실습
+            </Link>
             <a
               href="https://nextjs.org/docs"
               target="_blank"

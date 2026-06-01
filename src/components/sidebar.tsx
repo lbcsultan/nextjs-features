@@ -13,6 +13,23 @@ export function Sidebar({ onNavigate }: SidebarProps) {
 
   return (
     <nav className="flex flex-col gap-6">
+      <div>
+        <h3 className="mb-2 px-3 text-xs font-semibold uppercase tracking-wider text-zinc-500">
+          실습
+        </h3>
+        <Link
+          href="/playground"
+          onClick={onNavigate}
+          className={`block rounded-lg px-3 py-2 text-sm transition-colors ${
+            pathname === "/playground"
+              ? "bg-zinc-900 font-medium text-white dark:bg-zinc-100 dark:text-zinc-900"
+              : "text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
+          }`}
+        >
+          백엔드 기능 테스트
+        </Link>
+      </div>
+
       {navigation.map((category) => (
         <div key={category.title}>
           <h3 className="mb-2 px-3 text-xs font-semibold uppercase tracking-wider text-zinc-500">

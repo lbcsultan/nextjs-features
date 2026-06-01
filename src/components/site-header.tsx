@@ -66,6 +66,12 @@ export function SiteHeader() {
         </Link>
 
         <div className="flex items-center gap-4">
+          <Link
+            href="/playground"
+            className="hidden text-sm font-medium text-zinc-700 transition-colors hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100 sm:inline"
+          >
+            백엔드 실습
+          </Link>
           <MobileNav />
           <a
             href="https://nextjs.org/docs"
